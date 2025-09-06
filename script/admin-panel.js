@@ -102,7 +102,7 @@ allStudentDataBtn.addEventListener('click', showAllStudentsData);
 allCoursesDataBtn.addEventListener('click', showAllCoursesData);
 
 signUpBtn.addEventListener('click', () => {
-    window.location.href = "../index/signup.html"
+    window.location.href = "../signup.html"
 })
 
 function homePage() {
@@ -126,7 +126,7 @@ function showlogoutBox() {
 }
 
 function logoutAdmin() {
-    window.location.href = "../index/index.html";
+    window.location.href = "../index.html";
 }
 
 function hideLogoutBox() {
