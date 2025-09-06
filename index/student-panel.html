@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/student-panel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1 class="heading">Student Panel</h1>
+            <div class="left-nav">
+                <ul class="nav-list">
+                    <li class="link enroll-course-btn">Enroll Course</li>
+                    <li class="link my-courses-btn">My Courses</li>
+                    <li class="link search-course-btn">Search Course</li>
+                    <li class="link fees-btn">Fees</li>
+                    <li class="link reset-password-section-btn">Reset Password</li>
+                    <li class="link logout-section-btn">Logout</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="greeting-section ">
+                <p class="current-user-roll"></p>
+                <div class="welcome-container">
+                    <h1>Welcome to <span>Student portal!</span></h1>
+                    <p>Please advance to navbar to explore further options.</p>
+                </div>
+            </div>
+
+            <!-- Enroll Course -->
+            <div class="enroll-course-section hidden">
+                <div class="enroll-container">
+                    <h1 class="enroll-course-heading">Enroll Course</h1>    
+                    <div class="enroll-input-container">
+                        <input type="text" class="enroll-course-input" placeholder="Search course">
+                    </div>
+                    <div class="enroll-course-ul-append-container">
+                        <ul class="enroll-course-ul"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Courses -->
+            <div class="my-courses-container hidden">
+                <div class="my-courses-disply-container">
+                    <h1 class="my-courses-heading">Enrolled Courses</h1>
+                    <!-- <button class="temp">Show</button> -->
+                    <div class="append-registered-courses">
+                        <ul class="append-registerd-courses-ul">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Course -->
+            <div class="serach-course-container hidden">
+                <div class="search-course-mini-cont">
+                    <input type="text" class="search-course-input" placeholder="Enter coursename or course code to search">
+                </div>
+                <ul class="append-search-course-ul">
+
+                </ul>
+            </div>
+
+            <!-- reset password -->
+            <div class="reset-password-container hidden">
+                <div class="reset-pass-mini-cotainer">
+                    <h1 class="reset-password-heading">Reset Password</h1>                    
+                    <input type="text" class="input new-password" placeholder="Enter new password">
+                    <input type="text" class="input confirm-new-password" placeholder="Confirm new password">
+                    <div class="btn">
+                        <button class="cofirm-password-btn">Reset Password</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- logout -->
+            <div class="logout-container hidden">
+                <div class="logout-mini-container">
+                    <h1 class="logout-heading">Logout</h1>
+                    <div class="btn">
+                        <button class="logout-btn">Logout</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Fees -->
+             <div class="fees-container hidden">
+                <div class="fees-mini-container">
+                    <h1 class="fees-heading">Semester Fees</h1>
+                </div>
+                <div class="fees-info"></div>
+             </div>
+
+        </div>
+    </div>
+    <script type="module" src="../script//student-panel.js"></script>
+</body>
+</html>

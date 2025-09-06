@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/admin-panel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logout-container hidden">
+            <ul>
+                <li class="logout-button">logout</li>
+            </ul>
+        </div>
+        <div class="courses-container hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2c2b2b"><path d="M12 10L16 14H8L12 10Z"></path></svg>
+            <div class="course-content">
+                <ul class="courses-nav-links">
+                    <li class="add-course">Add course</li>
+                    <li class="show-all-courses">Show all courses</li>
+                    <li class="remove-course">Remove course</li>
+                </ul>
+                <ul class="courses-nav-links">
+                    <li class="update-course-info">Update course info</li>
+                    <li class="search-course-by-name">Search course by name</li>
+                    <li class="remove-student-btn">Remove student</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="student-content hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2c2b2b"><path d="M12 10L16 14H8L12 10Z"></path></svg>
+                <ul class="students-nav-links">
+                    <li class="add-student-info-btn">Add student</li>
+                    <li class="update-student-info-btn">Update student info</li>
+                    <li class="show-all-students-btn">View all registered Students</li>
+                    <li class="export-all-data-btn">Export All data</li>
+                </ul>
+            </div> 
+        <nav class="nav-bar">
+            <div class="heading">Admin Panel</div>
+            <ul class="navlinks">
+                <li class="links courses">Courses</li>
+                <li class="links students">Students</li>
+                <li class="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12.1597 16C10.1243 16 8.29182 16.8687 7.01276 18.2556C8.38039 19.3474 10.114 20 12 20C13.9695 20 15.7727 19.2883 17.1666 18.1081C15.8956 16.8074 14.1219 16 12.1597 16ZM12 4C7.58172 4 4 7.58172 4 12C4 13.8106 4.6015 15.4807 5.61557 16.8214C7.25639 15.0841 9.58144 14 12.1597 14C14.6441 14 16.8933 15.0066 18.5218 16.6342C19.4526 15.3267 20 13.7273 20 12C20 7.58172 16.4183 4 12 4ZM12 5C14.2091 5 16 6.79086 16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5ZM12 7C10.8954 7 10 7.89543 10 9C10 10.1046 10.8954 11 12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7Z"></path></svg></li>
+            </ul>
+        </nav>
+
+        <!-- Main content -->
+
+        <div class="welcome-main">
+            <h1>Welcome to Admin Panel!</h1>
+            <p>Please advance to nav bar to take further actions.</p>
+        </div>
+
+
+        <!-- Add course -->
+
+        <div class="add-course-container hidden">
+            <p>Enter course name</p>
+            <input type="text" placeholder="Enter course name" class="course-name input">
+            <p>Enter course code</p>
+            <input type="text" placeholder="Enter course code" class="course-code input">
+            <p>Enter credit hours</p>
+            <input type="number" placeholder="Enter course credit hours" class="course-cr-hrs input">
+            <div class="btn">
+                <button class="save-course-btn">Add Course</button>
+            </div>
+        </div>
+
+        <!-- All Courses -->
+         <div class="show-all-courses-container hidden">
+            <div class="show-all-courses-box">
+                <!-- <div class="row">
+                    <div class="col"></div>
+                </div> -->
+            </div>
+         </div>
+
+         <!-- Remove course -->
+
+         <div class="remove-course-container hidden">
+            <div class="remove-course-search">
+                <input type="text" class="search-course-input" placeholder="Enter course code or course name">
+            </div>
+            <div class="ul-append-for-remove-search"></div>
+         </div>
+
+
+         <!-- search course -->
+
+         <div class="search-course-container hidden">
+            <div class="search-course-search">
+                <input type="text" class="only-search-course-input" placeholder="Enter course code or course name">
+            </div>
+            <div class="ul-append-for-only-search"></div>
+         </div>
+
+
+         <!-- Update course info -->
+
+         <div class="update-course-info-container hidden">
+            <div class="update-course-info-search">
+                <input type="text" class="update-course-info-search-input" placeholder="Enter course code or course name">
+            </div>
+            <div class="ul-append-for-course-updation"></div>
+         </div>
+
+
+         <!-- Remove student -->
+         <div class="remove-student-container hidden">
+            <div class="remove-student-mini-container">
+                <input type="text" class="remove-student-input" placeholder="Enter student name or Roll number">
+            </div>
+            <div class="append-ul-for-removing-student">
+                <ul class="remove-student-ul">
+
+                </ul>
+            </div>
+         </div>
+
+
+         <!-- Update student info -->
+         <div class="update-student-info-container hidden">
+            <div class="update-student-info-mini-container">
+                <input type="text" class="update-student-info-input" placeholder="Enter name or Roll no of student">
+            </div>
+            <ul class="update-student-info-ul"></ul>
+         </div>
+
+         <!-- Show all students record -->
+          <div class="show-all-students-record-container hidden">
+            <div class="show-all-students-record-mini-container">
+                <ul class="show-all-students-ul"></ul>
+            </div>
+          </div>
+
+
+          <!-- Export all data -->
+          <div class="export-all-data-container hidden">
+            <div class="export-all-data-mini-container">
+                <button class="all-students-data-btn button">All Students Data</button>
+                <button class="all-courses-data-btn button">All Courses Data</button>
+            </div>
+            <div class="append-all-data"></div>
+          </div>
+
+    </div>
+    <script type="module" src="../script/admin-panel.js"></script>
+</body>
+</html>

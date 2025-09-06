@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.active-link {
+    border-left: 5px solid navy;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: #000;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    background-color: #0d0e0e;
+    width: 23vw;
+    height: 100vh;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.left-nav {
+    margin-top: 80px;
+}
+
+.nav-list {
+    gap: 20px;
+}
+
+.nav-list li {
+    text-align: center;
+    /* border: 2px solid red; */
+    /* border-left: 3px solid red; */
+    padding: 20px 0px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-list li:hover {
+    background-color: #000;
+    cursor: pointer;
+    /* transform: scale(1.05); */
+}
+
+.right {
+    background-color: #0d0e0e;
+    width: 76vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* Welcome container */
+
+.welcome-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.welcome-container h1 {
+    font-size: 60px;
+}
+
+.welcome-container h1 span {
+    color: navy;
+}
+
+.welcome-container p {
+    font-size: 22px;
+    /* color: red; */
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+
+.enroll-container{
+    margin: 20px 25px;
+}
+
+.enroll-container .enroll-course-heading {
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+}
+
+.enroll-container .enroll-course-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 20%;
+    height: 6px;
+    border-radius: 25px;
+    background-color: navy;
+}
+
+.current-user-roll {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.enroll-input-container {
+    width: 100%;
+    margin: 60px auto;
+    /* border: 3px solid #fff; */
+    text-align: center;
+}
+
+.enroll-input-container .enroll-course-input {
+    width: 60vw;
+    padding: 8px 10px;
+    background-color: transparent;
+    border: 2px solid navy;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.3s ease;
+    color: #fff;
+} 
+
+.enroll-input-container .enroll-course-input:focus {
+    transform: scale(1.06);
+    border: 2px solid navy;
+}
+
+.my-courses-disply-container{
+    /* border: 2px solid #fff; */
+    margin: 19px 30px;
+}
+
+.my-courses-disply-container .my-courses-heading {
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+}
+
+.my-courses-disply-container .my-courses-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 20%;
+    height: 6px;
+    border-radius: 25px;
+    background-color: navy;
+}
+
+.my-courses-disply-container .append-registered-courses {
+    /* border: 2px solid #fff; */
+    margin-top: 105px;
+}
+
+.search-course-mini-cont {
+    text-align: center;
+    /* border: 2px solid #fff; */
+    margin-top: 95px;
+}
+
+.search-course-mini-cont .search-course-input {
+    padding: 8px;
+    background-color: transparent;
+    border: 2px solid navy;
+    width: 50vw;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.serach-course-container {
+    margin: 30px;
+}
+
+.append-search-course-ul {
+    margin-top: 60px;
+}
+
+/* Reset Password */
+
+.reset-password-container {
+    margin: 20px 30px;
+}
+
+.reset-pass-mini-cotainer .reset-password-heading {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 96px;
+    position: relative;
+}
+
+.reset-pass-mini-cotainer .reset-password-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 20%;
+    height: 6px;
+    border-radius: 25px;
+    background-color: navy;
+}
+
+.reset-pass-mini-cotainer .input {
+    display: block;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: 2px solid navy;
+    padding: 5px;
+    border-radius: 7px;
+    width: 15vw;
+    outline: none;
+    transition: 0.3 ease;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.cofirm-password-btn{
+    background-color: transparent;
+    border: 3px solid navy;
+    padding: 8px 14px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.cofirm-password-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Logout */
+
+.logout-container{
+    margin: 20px 30px;
+}
+
+.logout-mini-container .logout-heading {
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+}
+
+.logout-mini-container .logout-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 8%;
+    height: 6px;
+    border-radius: 25px;
+    background-color: navy;
+}
+
+.logout-mini-container .btn {
+    margin-top: 95px;
+} 
+
+.logout-mini-container .btn .logout-btn {
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: 3px solid navy;
+    border-radius: 7px;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.logout-mini-container .btn .logout-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.fees-container {
+    margin: 20px 30px;
+}
+
+.fees-container .fees-mini-container .fees-heading {
+    font-size: 40px;
+    position: relative;
+}
+
+.fees-container .fees-mini-container .fees-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 15%;
+    height: 6px;
+    border-radius: 25px;
+    background-color: navy;
+}

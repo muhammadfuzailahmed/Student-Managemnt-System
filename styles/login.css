@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+.box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    width: 30vw;
+    height: 60vh;
+    background-color: #0b0b0b;
+    border-radius: 7px;
+    border: 2px solid red;
+    padding: 25px;
+    position: relative;
+}
+
+.heading {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.form {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.input {
+    margin: 15px 0px;
+}
+
+.error-container {
+    /* border: 2px solid green; */
+    margin-top: 40px;
+}
+
+.inputs {
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    width: 80%;
+    color: #fff;
+    border: 1px solid grey;
+    transition: border 0.3s ease;
+}
+
+.inputs:focus {
+    border: 1px solid red;
+}
+
+.forgot-poassword {
+    color: red;
+    text-decoration: underline;
+    position: absolute;
+    right: 60px;
+    font-size: 13px;
+    cursor: pointer;
+    /* margin-bottom: 15px; */
+}
+
+.btn {
+    /* margin-top: 45px; */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.login {
+    padding: 8px 14px;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 7px;
+    width: 10vw;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.login:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.hidden {
+    display: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.input p {
+    position: absolute;
+    right: 45px;
+    top: 4px;
+}
+
+.lock svg{
+    color: #fff;
+    width: 19px;
+    cursor: pointer;
+}
+
+.unlock svg{
+    color: #fff;
+    width: 19px;
+    cursor: pointer;
+}

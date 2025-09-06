@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.selected {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: #000;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 35px;
+    height: 60px;
+}
+
+.nav-bar .heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+.nav-bar .navlinks {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+/* .nav-bar .navlinks .links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: red;
+    height: 3px;
+    border-radius: 8px;
+    width: 0;
+}
+ */
+
+ .nav-bar ul li:hover {
+    cursor: pointer;
+    /* width: 100%; */
+    color: red;
+}
+
+.nav-bar .navlinks .svg {
+    width: 26px;
+    transition: 0.3s ease;
+}
+
+.logout-container  {
+    width: 7vw;
+    height: 8vh;
+    position: absolute;
+    right: 5px;
+    top: 45px;
+    border-radius: 6px;
+    background-color: #2c2b2b;
+    z-index: 99;
+}
+
+.logout-container ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.logout-container ul li {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.logout-container ul li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Courses container */
+
+.courses-container {
+    width: 30vw;
+    height: 25vh;
+    border-radius: 7px;
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    background-color: #2c2b2b;
+    transition: 0.3s ease;
+    z-index: 99;
+    /* overflow: hidden; */
+}
+
+.courses-container svg {
+    width: 68px;
+    position: absolute;
+    right: 0;
+    top: -36px;
+}
+
+.course-content {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;    
+    transform: translate(-50%, -50%);
+}
+
+.course-content .courses-nav-links {
+    margin: 0px 10px;
+    /* gap: 20px; */
+} 
+
+.course-content .courses-nav-links li {
+    list-style: none;
+    margin: 5px 0px;
+    transition: 0.3s ease;
+}
+
+.course-content .courses-nav-links li:hover {
+    cursor: pointer;
+    color: red;
+    transform: scale(1.1);
+}
+
+.student-content {
+    width: 18vw;
+    height: 20vh;
+    border-radius: 7px;
+    position: absolute;
+    right: 70px;
+    top: 50px;
+    background-color: #2c2b2b;
+    transition: 0.3s ease;
+    z-index: 999;
+    /* overflow: hidden; */
+}
+
+.student-content .students-nav-links {
+    margin: 40px 35px;
+    /* gap: 20px; */
+} 
+
+.student-content .students-nav-links li {
+    list-style: none;
+    margin: 7px 0px;
+    transition: 0.3s ease;
+}
+
+.student-content .students-nav-links li:hover {
+    cursor: pointer;
+    color: red;
+    transform: scale(1.1);
+}
+    
+.student-content svg {
+    width: 68px;
+    position: absolute;
+    right: 0;
+    top: -36px;
+}
+
+.welcome-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome-main h1 {
+    font-size: 60px;
+}
+
+.welcome-main p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 22px;
+    color: red;
+    font-weight: bold;
+}
+
+/* Add course  */
+
+.add-course-container {
+    margin: 30px 25px;
+}
+
+.add-course-container p {
+    font-size: 21px;
+    margin: 10px 0px;
+}
+
+.add-course-container .input {
+    border: 1px solid grey;
+    outline: none;
+    background-color: transparent;
+    padding: 5px 8px;
+    border-radius: 6px;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.add-course-container .input:focus {
+    border: 1px solid red;
+}
+
+.add-course-container .btn {
+    margin-top: 15px;
+}
+
+.add-course-container .btn .save-course-btn {
+    padding: 8px 14px;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.add-course-container .btn .save-course-btn:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+ /*  Show all courses */
+
+ .show-all-courses-container {
+    margin: 50px 25px;
+ }
+
+ /* .show-all-courses-container .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    border: 1px solid white;
+    width: 90%;
+    margin: auto;
+ } */
+
+.show-all-courses-box ul:hover {
+    background-color: #0d0e0e;
+}
+
+
+
+/* Remove course */
+
+.remove-course-container {
+    margin: 30px 25px;
+}
+
+.remove-course-search {
+    text-align: center;
+}
+
+.search-course-input {
+    padding: 10px 12px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 50vw;
+    border-radius: 25px;
+    outline: none;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.search-course-input:focus {
+    border: 1px solid red;
+    transform: scale(1.1);
+}
+
+.ul-append-for-remove-search ul:hover {
+    background-color: #0d0e0e;
+}
+
+.search-button:hover {
+    transform: scale(1.1);
+}
+
+/* search course */
+
+.search-course-container {
+    margin: 30px 25px;
+}
+
+.search-course-search {
+    text-align: center;
+}
+
+.only-search-course-input {
+    padding: 10px 12px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 50vw;
+    border-radius: 25px;
+    outline: none;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.only-search-course-input:focus {
+    border: 1px solid red;
+    transform: scale(1.1);
+}
+
+.ul-append-for-only-search ul:hover {
+    background-color: #0d0e0e;
+}
+
+
+/* Update course info */
+
+.update-course-info-container {
+    margin: 30px 25px;
+}
+
+.update-course-info-search {
+    text-align: center;
+}
+
+.update-course-info-search-input {
+    padding: 10px 12px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 50vw;
+    border-radius: 25px;
+    outline: none;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.update-course-info-search-input:focus {
+    border: 1px solid red;
+    transform: scale(1.1);
+}
+
+.ul-append-for-course-updation ul:hover {
+    background-color: #0d0e0e;
+}
+
+/* Remove student */
+
+.remove-student-container {
+    margin: 30px;
+}
+
+.remove-student-container .remove-student-mini-container {
+    text-align: center;
+}
+
+.remove-student-container .remove-student-mini-container .remove-student-input {
+    width: 40vw;
+    padding: 8px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid red;
+    border-radius: 7px;
+}
+
+/* Update student info */
+.update-student-info-mini-container {
+    text-align: center;
+}
+
+.update-student-info-mini-container .update-student-info-input {
+    width: 40vw;
+    padding: 8px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid red;
+    border-radius: 7px;
+}
+
+/* Show all students record */
+
+.show-all-students-record-container {
+    margin: 30px;
+}
+
+.show-all-students-record-container .show-all-students-record-mini-container {
+    width: 90vw;
+    margin: auto;
+}
+
+/* Export all data */
+
+.export-all-data-container {
+    margin: 30px auto;
+    width: 90vw;
+}   
+
+.button {
+    padding: 8px 14px;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 7px;
+    margin: 0px 10px;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
