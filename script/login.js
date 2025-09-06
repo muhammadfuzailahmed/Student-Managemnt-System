@@ -79,5 +79,5 @@ function hidePassword() {
 }
 
 function forgotPasswordFunc() {
-    alert("Forgot password clicked");
+    window.location.href = "../index/forgot.html"
 }
