@@ -63,7 +63,7 @@ function signUpUser() {
 
         students.push(studentsDetails);
         saveStudentDataToLocal();
-        alert("Account created successfully!, You will be redirected to login page oce you press Ok");
+        alert("Account created successfully, You will be redirected to login page once you press Ok");
         studentName.value = "";
         studentRollNo.value = "";
         usernameInput.value = "";
