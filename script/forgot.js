@@ -32,7 +32,7 @@ updatePasswordBtn.addEventListener('click', () => {
                 student.studentsPassword = confirmPassword;
                 localStorage.setItem("studentsData", JSON.stringify(getStudentsData))
                 alert("Password changed successfully!")
-                window.location.href = "../index/index.html"
+                window.location.href = "../index.html"
             } 
 
          })

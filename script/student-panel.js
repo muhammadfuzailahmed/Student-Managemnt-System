@@ -312,7 +312,7 @@ function resetPassword() {
                 localStorage.setItem('studentsData', JSON.stringify(studentDetails));
                 console.log(currentSessionUser.password)
                 alert("Password updated successfully!");
-                window.location.href = "../index/index.html"; 
+                window.location.href = "../index.html"; 
             }
         })
     }
@@ -330,7 +330,7 @@ function showLogoutContainer() {
 
 function logoutUser() {
     alert("Loggedout Succesfully!");
-    window.location.href = "../index/index.html";
+    window.location.href = "../index.html";
 }
 
 function showFeesCotainer() {

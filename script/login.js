@@ -30,7 +30,7 @@ function loginUser() {
     if(username === "" || password === "") return;
     else if(username === admin.username && password === admin.password) {
         alert("Admin panel logged in");
-        window.location.href = "../index/admin-panel.html";
+        window.location.href = "./index/admin-panel.html";
         usernameInput.value = "";
         passwordInput.value = "";
     }else {
@@ -53,7 +53,7 @@ function loginUser() {
                         totalCreditHours: 0,
                     }
                 ))
-                window.location.href = "../index/student-panel.html";
+                window.location.href = "./index/student-panel.html";
             }
         });
         if(!found) {
@@ -79,5 +79,5 @@ function hidePassword() {
 }
 
 function forgotPasswordFunc() {
-    window.location.href = "../index/forgot.html"
+    window.location.href = "./index/forgot.html"
 }

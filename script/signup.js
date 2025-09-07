@@ -69,7 +69,7 @@ function signUpUser() {
         usernameInput.value = "";
         passwordValue.value = "";
         confirmPasswordValue.value = "";
-        window.location.href = "../index/index.html";
+        window.location.href = "../index.html";
     }
 } 
 
