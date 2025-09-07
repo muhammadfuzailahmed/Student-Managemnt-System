@@ -349,10 +349,15 @@ function showSemesterFees() {
     let perCreditHourFee = 7500;
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
+    let p3 = document.createElement('h3')
     let h3 = document.createElement('h3');
-    p1.style.marginTop = "95px";
+    p1.style.marginTop = "10px";
     p1.textContent = `Current total credit hours: ${sum}`;
     p2.style.marginTop = "10px";
+    p3.style.marginTop = "95px"
+    p3.style.marginBottom = "10px"
+    p3.textContent = "Fee per credit hour: 7500"
+    appendFeesInfo.appendChild(p3);
     appendFeesInfo.appendChild(p1);
     appendFeesInfo.appendChild(p2);
     appendFeesInfo.appendChild(h3);
@@ -361,6 +366,6 @@ function showSemesterFees() {
     h3.style.display = "inline-block";
     h3.style.marginLeft = "6px";
     h3.textContent = `${sum * perCreditHourFee}`
-    p2.textContent = `Fees to be paid: `;
+    p2.textContent = `Fees to be paid: Rs. `;
 }
 })
