@@ -325,6 +325,7 @@ function showLogoutContainer() {
     myCoursesSection.classList.add('hidden');
     enrollCourseSection.classList.add('hidden');
     searchCourseContainer.classList.add('hidden');
+    feesContainer.classList.add('hidden');
     logoutContainer.classList.remove('hidden');
 }
 
