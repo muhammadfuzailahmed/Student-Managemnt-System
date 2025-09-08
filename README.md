@@ -59,4 +59,4 @@ Role-based access (Admin vs. Student panel)
 Data Handling: JavaScript objects, arrays & local storage(no backend)
 
 Hosting: Vercel
-preview 👉: https://vercel.com/muhammad-fuzail-ahmeds-projects/student-managemnt-system
+preview 👉: https://student-managemnt-system-mu.vercel.app/
